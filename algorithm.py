@@ -2,7 +2,7 @@ import record
 
 def _create_record(process_list):
   """Pid must staring at 0"""
-  return [record.ProcessRecord(idx) for idx in range(len(process_list))]
+  return [record.ProcessRecord(process) for process in process_list]
 
 def FCFS(process_list):
   """First come first search"""
