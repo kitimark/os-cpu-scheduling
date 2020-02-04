@@ -6,6 +6,8 @@ class Process(object):
     self.exe_time = exe_time
     self.exe_time_left = exe_time
 
+  def __repr__(self):
+    return str(self.exe_time)
 
 class Condition(object):
   def __init__(self, time_range, percent):
