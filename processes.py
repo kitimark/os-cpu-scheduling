@@ -2,8 +2,9 @@ import random
 
 class Process(object):
   def __init__(self, pid, exe_time):
-    self.pid = None
+    self.pid = pid
     self.exe_time = exe_time
+    self.exe_time_left = exe_time
 
 
 class Condition(object):
